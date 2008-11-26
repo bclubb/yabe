@@ -17,6 +17,11 @@ namespace YABE.Infrastructure.DataAccess
 
         #region IPostRepository Members
 
+        /// <summary>
+        /// Fetches the current posts.
+        /// </summary>
+        /// <param name="numberToReturn">The number to return.</param>
+        /// <returns></returns>
         public IList<PostEntity> FetchCurrentPosts(int numberToReturn)
         {
 #warning FetchCurrentPosts is not implmented
