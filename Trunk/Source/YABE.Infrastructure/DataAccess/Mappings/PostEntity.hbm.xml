@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="YABE.Domain" namespace="YABE.Domain.Model">
+  <class name="PostEntity" table="YABE_Post">
+    <id name="Id" access="nosetter.camelcase">
+      <generator class="native" />
+    </id>
+    <property name="DateCreated" column="DateCreated" access="field.camelcase" insert="false" />
+    <property name="Title" column="Title" not-null="false" length="255" />
+    <property name="Text" column="Text" />
+    <property name="DatePublished" column="DatePublished"/>
+    <property name="Slug" column="Slug" length="255" />
+    <many-to-one name="Blog" class="BlogEntity" column="BlogId"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,50 @@
+<TemplatesExport family="File Templates">
+  <Template uid="94ff0b0c-86d8-4ee2-bb89-3cb07a265fc1" text="&#xD;&#xA;/*****************************************&#xD;&#xA;*	Migrations based on Migrator.NET&#xD;&#xA;*	http://code.google.com/p/migratordotnet/&#xD;&#xA;*****************************************/&#xD;&#xA;&#xD;&#xA;namespace $NAMESPACE$&#xD;&#xA;{&#xD;&#xA;	using Migrator.Framework;&#xD;&#xA;&#xD;&#xA;	[Migration($MIGRATION$)]&#xD;&#xA;	public class $CLASSNAME$ : Migration&#xD;&#xA;	{&#xD;&#xA;		public override void Up()&#xD;&#xA;		{&#xD;&#xA;			$END$          &#xD;&#xA;		}&#xD;&#xA;		public override void Down()&#xD;&#xA;		{&#xD;&#xA;                &#xD;&#xA;		}&#xD;&#xA;	}&#xD;&#xA;}" shortcut="" description="Migrator Migration" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="MIGRATION" expression="getCurrentTime(&quot;yyyyMMddhhmmss&quot;)" initialRange="-1" />
+      <Variable name="NAMESPACE" expression="fileDefaultNamespace()" initialRange="-1" />
+      <Variable name="CLASSNAME" expression="getFileNameWithoutExtension()" initialRange="-1" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="True" />
+    </CustomProperties>
+  </Template>
+  <Template uid="94ff0b0c-86d8-4ee2-bb89-3cb07a265fc1" text="&#xD;&#xA;/*****************************************&#xD;&#xA;*	Migrations based on Migrator.NET&#xD;&#xA;*	http://code.google.com/p/migratordotnet/&#xD;&#xA;*****************************************/&#xD;&#xA;&#xD;&#xA;namespace $NAMESPACE$&#xD;&#xA;{&#xD;&#xA;	using Migrator.Framework;&#xD;&#xA;&#xD;&#xA;	[Migration($MIGRATION$)]&#xD;&#xA;	public class $CLASSNAME$ : Migration&#xD;&#xA;	{&#xD;&#xA;		public override void Up()&#xD;&#xA;		{&#xD;&#xA;			$END$          &#xD;&#xA;		}&#xD;&#xA;		public override void Down()&#xD;&#xA;		{&#xD;&#xA;                &#xD;&#xA;		}&#xD;&#xA;	}&#xD;&#xA;}" shortcut="" description="Migrator Migration" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="MIGRATION" expression="getCurrentTime(&quot;yyyyMMddHHmmss&quot;)" initialRange="-1" />
+      <Variable name="NAMESPACE" expression="fileDefaultNamespace()" initialRange="-1" />
+      <Variable name="CLASSNAME" expression="getFileNameWithoutExtension()" initialRange="-1" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="True" />
+    </CustomProperties>
+  </Template>
+  <Template uid="94ff0b0c-86d8-4ee2-bb89-3cb07a265fc1" text="&#xD;&#xA;/*****************************************&#xD;&#xA;* Migrations based on Migrator.NET&#xD;&#xA;* http://code.google.com/p/migratordotnet/&#xD;&#xA;*****************************************/&#xD;&#xA;&#xD;&#xA;namespace $NAMESPACE$&#xD;&#xA;{&#xD;&#xA;	using Migrator.Framework;&#xD;&#xA;&#xD;&#xA;	[Migration($MIGRATION$)]&#xD;&#xA;	public class $CLASSNAME$ : Migration&#xD;&#xA;	{&#xD;&#xA;		public override void Up()&#xD;&#xA;		{&#xD;&#xA;			$END$          &#xD;&#xA;		}&#xD;&#xA;		public override void Down()&#xD;&#xA;		{&#xD;&#xA;                &#xD;&#xA;		}&#xD;&#xA;	}&#xD;&#xA;}" shortcut="" description="Migrator Migration" reformat="true" shortenQualifiedReferences="true">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="MIGRATION" expression="getCurrentTime(&quot;yyyyMMddHHmmss&quot;)" initialRange="-1" />
+      <Variable name="NAMESPACE" expression="fileDefaultNamespace()" initialRange="-1" />
+      <Variable name="CLASSNAME" expression="getFileNameWithoutExtension()" initialRange="-1" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="True" />
+    </CustomProperties>
+  </Template>
+</TemplatesExport>

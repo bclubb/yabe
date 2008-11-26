@@ -1,0 +1,78 @@
+﻿<%@ Import Namespace="YABE.Web.Controllers"%>
+<%@ Import Namespace="YABE.Web.CodeBehind.Shared"%>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/CodeBehind/Shared/Site.Master.cs" Inherits="YABE.Web.CodeBehind.Shared.Site" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="<%= Url.Content("~/Content/Envision.css") %>" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="wrap">
+		<!--header -->
+		<div id="header">			
+			<h1 id="logo-text"><%= Html.ActionLink<HomeController>(c => c.Index(), "Joe Young.Net") %></h1>		
+			<p id="slogan">
+			    Everybody loves a rose, But will you be thankful for the thorns?
+                <br />
+                - "Paradigm" - All Together Seperate</p>		
+			<div id="header-links">
+			    <p>
+				    <%= Html.ActionLink<HomeController>(c => c.Index(), "Home") %> | 
+				    <a href="index.html">Site Map</a>			
+			    </p>		
+		    </div>		
+        </div>
+        
+        <!-- menu -->	
+		<div  id="menu">
+			<ul>
+				<li id="current"> <%= Html.ActionLink<HomeController>(c => c.Index(), "Home") %></li>
+				<li><%= Html.ActionLink<BlogController>(c => c.Options(), "Options") %></li>
+				<li><%= Html.ActionLink<PostController>(c => c.Create(), "New Post") %></li>
+				<li class="last"><a href="index.html">About</a></li>		
+			</ul>
+		</div>	
+		
+		<!-- content-wrap starts here -->
+		<div id="content-wrap">
+				
+			<div id="sidebar">
+				<asp:ContentPlaceHolder ID="sidebar" runat="server">
+                </asp:ContentPlaceHolder>				
+		     <!-- sidebar ends here-->
+			</div>
+        	<div id="main">
+                <asp:ContentPlaceHolder ID="content" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        
+        <!-- content-wrap ends here -->	
+	    </div>
+	    
+	    <!--footer starts here-->
+		<div id="footer">
+			<p>
+			    &copy; 2006 <strong>Your Company</strong> | 
+			    Design by: <a href="http://www.styleshout.com/">styleshout</a> | 
+			    Valid <a href="http://validator.w3.org/check?uri=referer">XHTML</a> | 
+			    <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+    			
+   		        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			
+			    <a href="index.html">Home</a>&nbsp;|&nbsp;
+   		        <a href="index.html">Sitemap</a>&nbsp;|&nbsp;
+	   	        <a href="index.html">RSS Feed</a>
+   		    </p>
+   		    <asp:ContentPlaceHolder ID="footer" runat="server">
+        
+            </asp:ContentPlaceHolder>
+				
+		</div>	
+    
+    <!-- wrap ends here -->
+    </div>
+</body>
+</html>

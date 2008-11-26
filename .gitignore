@@ -1,0 +1,12 @@
+bin/
+obj/
+.svn/
+Build/
+Publish/
+*.user
+*.suo
+_ReSharper*
+*.resharper
+thumbs.db
+_sgbak
+*.sln.cache

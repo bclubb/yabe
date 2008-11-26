@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="YABE.Domain" namespace="YABE.Domain.Model">
+  <class name="BlogEntity" table="YABE_Blog">
+    <id name="Id" access="nosetter.camelcase">
+      <generator class="native" />
+    </id>
+    <property name="Host" column="Host" length="50" not-null="true" />
+    <component name="Options" class="BlogOptions">
+      <property name="NumberOfPostsToShowOnHomePage" />
+    </component>
+  </class>
+</hibernate-mapping>

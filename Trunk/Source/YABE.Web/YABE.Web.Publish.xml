@@ -1,0 +1,13 @@
+<publishData>
+  <publishTarget publishUrl="C:\Projects\YABE\Trunk\Publish\">
+    <file relUrl="Global.asax" publishTime="09/12/2008 09:17:50" />
+    <file relUrl="bin/YABE.Domain.dll" publishTime="09/23/2008 10:11:28" />
+    <file relUrl="bin/YABE.Web.pdb" publishTime="09/23/2008 10:11:28" />
+    <file relUrl="Web.config" publishTime="09/12/2008 09:17:50" />
+    <file relUrl="Default.aspx" publishTime="09/12/2008 09:17:50" />
+    <file relUrl="bin/Microsoft.Web.Mvc.dll" publishTime="08/27/2008 16:10:34" />
+    <file relUrl="bin/YABE.Web.dll" publishTime="09/23/2008 10:11:28" />
+    <file relUrl="bin/YABE.Domain.pdb" publishTime="09/23/2008 10:11:28" />
+    <file relUrl="bin/System.Web.Mvc.dll" publishTime="08/27/2008 16:12:32" />
+  </publishTarget>
+</publishData>

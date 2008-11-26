@@ -1,0 +1,31 @@
+﻿body
+{
+}
+/***********************************************************
+* Validation
+***********************************************************/
+.input-validation-error
+{
+	border:1px solid #ff0000;
+	background-color: #ffeeee;
+}
+.field-validation-error
+{
+	color:#FF0000;
+}
+.validation-summary
+{
+    border: 1px solid #FF0000;
+    width: 300px;
+}
+.validation-summary-title
+{
+    padding: 5px;
+    background-color: #FF0000;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.validation-summary-errors
+{
+	color:#FF0000;
+}
