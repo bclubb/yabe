@@ -17,6 +17,7 @@ namespace YABE.Infrastructure.DataAccess
 
         #region IPostRepository Members
 
+	[That's Crazy]
         public IList<PostEntity> FetchCurrentPosts(int numberToReturn)
         {
 #warning FetchCurrentPosts is not implmented
